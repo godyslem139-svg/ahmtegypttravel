@@ -127,7 +127,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/5 text-center text-gray-400 text-xs font-light">
-          &copy; {new Date().getFullYear()} AHMT Egypt Travel. All rights reserved. Designed with luxury and precision.
+          &copy; 2026 AHMT Egypt Travel. All rights reserved. Designed with luxury and precision.
         </div>
 
       </div>

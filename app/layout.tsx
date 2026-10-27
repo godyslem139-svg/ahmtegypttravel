@@ -1,8 +1,10 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar"; // استيراد الهيدر من مجلد components
-import Footer from "@/components/Footer"; // استيراد الفوتر من مجلد components
+import Navbar from "@/components/Navbar"; 
+import Footer from "@/components/Footer"; 
+import FloatingWhatsApp from "@/components/FloatingWhatsApp"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,15 +32,14 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-brand-navy text-white">
-        {/* الهيدر يظهر في كل صفحات الموقع */}
         <Navbar />
         
-        {/* المحتوى المتغير لكل صفحة */}
         <main className="flex-grow">
           {children}
         </main>
 
-        {/* الفوتر سيظهر الآن في كل صفحات الموقع تلقائياً */}
+        <FloatingWhatsApp />
+
         <Footer />
       </body>
     </html>

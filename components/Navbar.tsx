@@ -11,7 +11,6 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#0A192F]/95 backdrop-blur-md border-b border-[#D4AF37]/40 shadow-xl">
       
-      {/* Top Bar for Contact Info (Email, Phone, and Two WhatsApp Numbers) - Visible on Mobile & Desktop */}
       <div className="bg-[#050e1c] border-b border-[#D4AF37]/20 py-2 px-4 sm:px-6 lg:px-8 text-xs">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 text-gray-300">
           
@@ -24,7 +23,6 @@ export default function Navbar() {
               <span className="hidden sm:inline">info@ahmegypttravel.com</span>
             </a>
 
-            {/* Phone */}
             <a href="tel:+201226158975" className="flex items-center gap-2 hover:text-[#D4AF37] transition-colors">
               <svg className="w-4 h-4 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -33,7 +31,6 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* WhatsApp Direct Links */}
           <div className="flex flex-wrap items-center gap-3">
             {/* WhatsApp 1 */}
             <a 
@@ -50,7 +47,6 @@ export default function Navbar() {
             
             <span className="text-gray-600">|</span>
 
-            {/* WhatsApp 2 */}
             <a 
               href="https://wa.me/201080132708" 
               target="_blank" 
@@ -67,11 +63,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           
-          {/* Logo Section */}
           <Link href="/" className="flex items-center gap-4 group">
             <div className="relative w-16 h-16 overflow-hidden rounded-full border-2 border-[#D4AF37] shadow-2xl bg-[#0A192F]">
               <Image 
@@ -102,7 +96,6 @@ export default function Navbar() {
             </div>
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setIsOpen(!isOpen)}
@@ -122,7 +115,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-[#0A192F] border-b border-[#D4AF37]/30 px-6 py-6 shadow-2xl transition-all">
           <div className="flex flex-col space-y-4 text-center font-bold text-lg">

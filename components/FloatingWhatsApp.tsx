@@ -9,7 +9,6 @@ export default function FloatingWhatsApp() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       
-      {/* Popup Menu for Both Numbers */}
       {isOpen && (
         <div className="absolute bottom-16 right-0 w-72 bg-[#0A192F] border-2 border-[#D4AF37]/50 rounded-2xl shadow-2xl p-4 text-white animate-in fade-in slide-in-from-bottom-4 duration-300 mb-2">
           
@@ -28,7 +27,6 @@ export default function FloatingWhatsApp() {
           </p>
           
           <div className="space-y-2.5">
-            {/* Number 1 */}
             <a 
               href="https://wa.me/201226158975" 
               target="_blank" 
@@ -46,7 +44,6 @@ export default function FloatingWhatsApp() {
               </div>
             </a>
 
-            {/* Number 2 */}
             <a 
               href="https://wa.me/201080132708" 
               target="_blank" 
@@ -68,13 +65,11 @@ export default function FloatingWhatsApp() {
         </div>
       )}
 
-      {/* Main Floating Button with Pulse Effect */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-14 h-14 rounded-full bg-gradient-to-tr from-green-600 to-green-400 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 relative group border-2 border-[#D4AF37]"
         aria-label="WhatsApp Contact"
       >
-        {/* Pulse Glow Animation */}
         <span className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-30 pointer-events-none" />
         
         <svg className="w-8 h-8 fill-current relative z-10" viewBox="0 0 24 24">

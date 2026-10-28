@@ -38,13 +38,11 @@ export default function SampleTours() {
   return (
     <section className="py-28 bg-[#0A192F] relative overflow-hidden">
       
-      {/* Decorative Gold Light Beams & Lines */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-px bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#D4AF37]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-[#D4AF37] text-xs font-bold tracking-[0.25em] uppercase px-5 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/40 inline-block mb-4 shadow-lg">
             Embark on Your Next Adventure
@@ -55,22 +53,18 @@ export default function SampleTours() {
           <p className="text-gray-300 text-lg font-light leading-relaxed max-w-2xl mx-auto">
             Discover breathtaking landscapes, timeless rivers, and ancient wonders tailored for an unforgettable journey.
           </p>
-          {/* Gold Decorative Underline */}
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mt-6" />
         </div>
 
-        {/* Trips Grid - Without Prices, Pure Gold Line Luxury Theme */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {sampleTrips.map((trip, index) => (
             <div 
               key={index}
               className="group relative bg-white/[0.03] backdrop-blur-xl border border-[#D4AF37]/30 rounded-3xl p-8 shadow-2xl transition-all duration-500 ease-out hover:-translate-y-3 hover:border-[#D4AF37] hover:shadow-[0_20px_50px_rgba(212,175,55,0.15)] flex flex-col justify-between overflow-hidden"
             >
-              {/* Corner Gold Accent Line */}
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#D4AF37]/20 to-transparent rounded-bl-full pointer-events-none transition-all duration-500 group-hover:scale-125" />
 
               <div>
-                {/* Top Bar: Icon */}
                 <div className="flex items-center justify-between mb-8">
                   <div className="p-3.5 rounded-2xl bg-[#D4AF37]/10 border border-[#D4AF37]/30 shadow-inner group-hover:bg-[#D4AF37]/20 transition-colors">
                     {trip.icon}
@@ -80,25 +74,20 @@ export default function SampleTours() {
                   </span>
                 </div>
 
-                {/* Duration Tag */}
                 <span className="text-xs font-semibold tracking-wider text-[#D4AF37] uppercase block mb-2">
                   ✦ {trip.duration}
                 </span>
 
-                {/* Title */}
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#D4AF37] transition-colors leading-snug">
                   {trip.title}
                 </h3>
 
-                {/* Description */}
                 <p className="text-gray-300 text-sm font-light leading-relaxed mb-8">
                   {trip.description}
                 </p>
               </div>
 
-              {/* Bottom Action Area */}
               <div>
-                {/* Thin Gold Separator Line */}
                 <div className="w-full h-px bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent mb-6" />
 
                 <Link 

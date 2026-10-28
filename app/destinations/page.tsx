@@ -43,7 +43,6 @@ export default function DestinationsPage() {
   return (
     <div className="min-h-screen relative text-white overflow-hidden">
       
-      {/* Background Video & Overlay */}
       <div className="fixed inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
         <video 
           autoPlay 
@@ -58,10 +57,8 @@ export default function DestinationsPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A192F]/90 via-[#0A192F]/80 to-[#0A192F]/95 backdrop-blur-[2px]" />
       </div>
 
-      {/* Main Content */}
       <div className="relative z-10 pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase px-5 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/40 inline-block mb-4 shadow-lg backdrop-blur-md">
             Timeless Landmarks
@@ -75,14 +72,12 @@ export default function DestinationsPage() {
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mt-6" />
         </div>
 
-        {/* Destinations Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {destinations.map((dest, idx) => (
             <div 
               key={idx}
               className="rounded-[30px] bg-[#0A192F]/80 backdrop-blur-xl border border-[#D4AF37]/30 overflow-hidden shadow-2xl hover:border-[#D4AF37] transition-all duration-500 group flex flex-col justify-between"
             >
-              {/* Card Image - Full Vertical Natural Display */}
               <div className="relative w-full overflow-hidden bg-transparent">
                 <Image 
                   src={dest.image} 
@@ -98,7 +93,6 @@ export default function DestinationsPage() {
                 </span>
               </div>
 
-              {/* Card Body */}
               <div className="p-8 flex-grow flex flex-col justify-between">
                 <div>
                   <div className="text-xs text-[#D4AF37] uppercase tracking-widest font-bold mb-1">{dest.subtitle}</div>
@@ -110,7 +104,6 @@ export default function DestinationsPage() {
                   </p>
                 </div>
 
-                {/* Actions */}
                 <div className="flex items-center gap-3 pt-4 border-t border-[#D4AF37]/20">
                   <Link 
                     href={`/destinations/${dest.slug}`}

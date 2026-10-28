@@ -14,12 +14,10 @@ export default function EgyptianGallery() {
   return (
     <section className="py-28 bg-[#0A192F] relative overflow-hidden">
       
-      {/* Background Glow Elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#D4AF37]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16">
         
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-[#D4AF37] text-xs font-bold tracking-[0.25em] uppercase px-5 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/40 inline-block mb-4 shadow-lg">
             Explore Egypt
@@ -35,21 +33,17 @@ export default function EgyptianGallery() {
 
       </div>
 
-      {/* Infinite Moving Marquee Slider for Images */}
       <div className="relative w-full overflow-hidden flex py-4">
         
-        {/* Gradient Fade Edges for Smooth Look */}
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0A192F] to-transparent z-20 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0A192F] to-transparent z-20 pointer-events-none" />
 
-        {/* Marquee Track */}
         <div className="flex gap-6 animate-marquee whitespace-nowrap hover:[animation-play-state:paused] items-center">
           {[...galleryImages, ...galleryImages, ...galleryImages].map((item, index) => (
             <div 
               key={index}
               className="w-[320px] sm:w-[380px] flex-shrink-0 group relative overflow-hidden rounded-[30px] border-2 border-[#D4AF37]/40 bg-[#0A192F]/90 shadow-2xl transition-all duration-500 ease-out hover:border-[#D4AF37] hover:shadow-[0_20px_50px_rgba(212,175,55,0.3)] flex flex-col"
             >
-              {/* Image Box - Natural full height and width without cropping */}
               <div className="relative w-full p-4 flex items-center justify-center bg-black/40">
                 <Image 
                   src={item.src} 
@@ -60,7 +54,6 @@ export default function EgyptianGallery() {
                 />
               </div>
 
-              {/* Content Box */}
               <div className="p-6 bg-[#0A192F] border-t border-[#D4AF37]/20 whitespace-normal">
                 <span className="text-[#D4AF37] text-xs font-semibold tracking-wider uppercase mb-1 block">
                   ✦ {item.category}
@@ -70,7 +63,6 @@ export default function EgyptianGallery() {
                 </h3>
               </div>
 
-              {/* Corner Gold Accent Frame */}
               <div className="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               <div className="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             </div>

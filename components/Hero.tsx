@@ -5,7 +5,6 @@ export default function Hero() {
   return (
     <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       
-      {/* 1. Video Background with Fallback */}
       <div className="absolute inset-0 z-0">
         <video 
           autoPlay 
@@ -18,14 +17,11 @@ export default function Hero() {
           Your browser does not support the video tag.
         </video>
         
-        {/* Dark Royal Blue Overlay to match the logo colors */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A192F]/90 via-[#0A192F]/70 to-[#0A192F]/60 backdrop-blur-[2px]" />
       </div>
 
-      {/* 2. Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         
-        {/* Badge / Location Tag */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/50 text-[#D4AF37] text-sm font-semibold tracking-wider uppercase mb-6 backdrop-blur-md shadow-lg">
           <svg className="w-4 h-4 text-[#D4AF37]" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
@@ -33,17 +29,14 @@ export default function Hero() {
           Sharm El Sheikh • Down Town • King Salman Street
         </div>
 
-        {/* Main Title */}
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-wide leading-tight mb-6 drop-shadow-2xl">
           Your Gateway to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-yellow-300 to-yellow-500">Egypt Exploration</span>
         </h1>
 
-        {/* Subtitle / Description */}
         <p className="text-lg sm:text-xl text-gray-200 max-w-2xl font-light leading-relaxed mb-10 drop-shadow-md">
           Immerse yourself in the pharaonic magic, pristine Red Sea beaches, and unforgettable luxury journeys curated exclusively for you.
         </p>
 
-        {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
           <Link 
             href="/tours" 
@@ -61,7 +54,6 @@ export default function Hero() {
 
       </div>
 
-      {/* Bottom decorative wave or shadow gradient */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0A192F] to-transparent z-10" />
     </section>
   );

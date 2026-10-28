@@ -21,7 +21,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* حركة السلايدر المتحرك (Marquee) الأمامية */
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -37,7 +36,6 @@ body {
   animation: marquee 35s linear infinite;
 }
 
-/* حركة السلايدر المتحرك (Marquee) العكسية */
 @keyframes marquee-reverse {
   0% {
     transform: translateX(-50%);

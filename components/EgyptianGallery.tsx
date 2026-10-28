@@ -45,9 +45,9 @@ export default function EgyptianGallery() {
                   src={item.src} 
                   alt={item.title} 
                   title={item.title}
-                  width={600}
-                  height={800}
-                  sizes="(max-width: 768px) 320px, 380px"
+                  width={500}
+                  height={650}
+                  sizes="(max-width: 640px) 320px, 380px"
                   className="w-full h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-105 rounded-2xl"
                 />
               </div>

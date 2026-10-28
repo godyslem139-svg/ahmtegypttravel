@@ -1,10 +1,11 @@
 // app/page.tsx
 import Hero from "@/components/Hero";
-import EgyptianGallery from "@/components/EgyptianGallery"; // معرض الصور المتحرك تحت الهيرو مباشرة
+import EgyptianGallery from "@/components/EgyptianGallery";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import TourTypesGallery from "@/components/TourTypesGallery"; // استيراد معرض أنواع السياحة المتحرك العكسي
 import SampleTours from "@/components/SampleTours";
 import CuratedJourneys from "@/components/CuratedJourneys";
-import CustomEscape from "@/components/CustomEscape"; // سكشن تصميم الرحلة المخصصة مع فيديو bb.mp4
+import CustomEscape from "@/components/CustomEscape"; 
 
 export default function Home() {
   return (
@@ -12,11 +13,14 @@ export default function Home() {
       {/* سكشن الهيرو الرئيسي */}
       <Hero />
       
-      {/* معرض الصور المتحرك تحت الهيرو مباشرة */}
+      {/* معرض المدن المتحرك تحت الهيرو مباشرة */}
       <EgyptianGallery />
 
       {/* سكشن مميزات الشركة مع تأثير الورقة الطائرة */}
       <WhyChooseUs />
+
+      {/* معرض أنواع السياحة المتحرك بالعكس بعد سكشن Why Choose Us */}
+      <TourTypesGallery />
 
       {/* سكشن الرحلات النموذجية */}
       <SampleTours />

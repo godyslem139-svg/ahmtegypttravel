@@ -8,15 +8,12 @@ export default function Footer() {
   return (
     <footer className="bg-[#0A192F] text-white pt-20 pb-12 border-t border-[#D4AF37]/20 relative overflow-hidden">
       
-      {/* خلفية مضيئة متناسقة مع الهوية */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#D4AF37]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* القسم العلوي: الشعار، النبذة، وأزرار التواصل وسوشيال ميديا */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pb-16 border-b border-[#D4AF37]/20">
           
-          {/* الجانب الأيسر: الشعار والاسم */}
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3 mb-4">
               <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-[#D4AF37] shadow-lg bg-white/5 flex-shrink-0">
@@ -37,11 +34,9 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* الجانب الأيمن: أزرار التواصل (الإيميل ورقمي الواتساب) وأيقونات السوشيال ميديا */}
           <div className="lg:col-span-7 flex flex-col items-start lg:items-end gap-6">
             
             <div className="flex flex-wrap gap-4 items-center">
-              {/* زر البريد الإلكتروني */}
               <a 
                 href="mailto:info@ahmegypttravel.com" 
                 className="flex items-center gap-3 px-6 py-3.5 rounded-full bg-white/[0.03] border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all duration-300 shadow-lg group"
@@ -52,7 +47,6 @@ export default function Footer() {
                 <span className="text-sm font-medium text-gray-200 group-hover:text-[#D4AF37] transition-colors">info@ahmegypttravel.com</span>
               </a>
 
-              {/* واتساب 1 */}
               <a 
                 href="https://wa.me/201226158975" 
                 target="_blank" 
@@ -65,7 +59,6 @@ export default function Footer() {
                 <span className="text-sm font-medium text-gray-200 group-hover:text-[#D4AF37] transition-colors">+20 122 615 8975</span>
               </a>
 
-              {/* واتساب 2 */}
               <a 
                 href="https://wa.me/201080132708" 
                 target="_blank" 
@@ -79,7 +72,6 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* السوشيال ميديا */}
             <div className="flex items-center gap-3">
               {[
                 { href: "https://wa.me/201226158975", label: "WhatsApp" },
@@ -103,14 +95,13 @@ export default function Footer() {
 
         </div>
 
-        {/* القوائم السريعة والوجهات */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-16">
           <div>
             <h4 className="text-white text-lg font-bold mb-6 tracking-wide flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#D4AF37]" /> Quick Links
             </h4>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {["Home", "Destinations", "Tours", "About Us", "Contact Us"].map((link, idx) => (
+              {["Home", "Destinations", "Tours", "About", "Contact"].map((link, idx) => (
                 <Link 
                   key={idx} 
                   href={`/${link === "Home" ? "" : link.toLowerCase().replace(/\s+/g, '-')}`} 

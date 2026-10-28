@@ -48,7 +48,7 @@ export default function SampleTours() {
             Embark on Your Next Adventure
           </span>
           <h2 className="text-4xl sm:text-6xl font-black text-white tracking-wide mb-6">
-            Experience Egypt's <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-yellow-200 to-yellow-500">Iconic Icons</span>
+            Experience Egypt&apos;s <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-yellow-200 to-yellow-500">Iconic Icons</span>
           </h2>
           <p className="text-gray-300 text-lg font-light leading-relaxed max-w-2xl mx-auto">
             Discover breathtaking landscapes, timeless rivers, and ancient wonders tailored for an unforgettable journey.
@@ -92,6 +92,7 @@ export default function SampleTours() {
 
                 <Link 
                   href="/contact" 
+                  title={`Plan your journey for ${trip.title}`}
                   className="w-full py-3.5 rounded-xl border border-[#D4AF37]/60 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#0A192F] font-bold text-sm text-center block transition-all duration-300 shadow-md transform hover:scale-[1.02]"
                 >
                   Plan Your Journey

@@ -16,14 +16,14 @@ export default function Navbar() {
           
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             {/* Email */}
-            <a href="mailto:info@ahmegypttravel.com" className="flex items-center gap-2 hover:text-[#D4AF37] transition-colors">
+            <a href="mailto:info@ahmegypttravel.com" title="Email AHMT Egypt Travel" className="flex items-center gap-2 hover:text-[#D4AF37] transition-colors">
               <svg className="w-4 h-4 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <span className="hidden sm:inline">info@ahmegypttravel.com</span>
             </a>
 
-            <a href="tel:+201226158975" className="flex items-center gap-2 hover:text-[#D4AF37] transition-colors">
+            <a href="tel:+201226158975" title="Call support line" className="flex items-center gap-2 hover:text-[#D4AF37] transition-colors">
               <svg className="w-4 h-4 text-[#D4AF37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
@@ -37,6 +37,7 @@ export default function Navbar() {
               href="https://wa.me/201226158975" 
               target="_blank" 
               rel="noopener noreferrer" 
+              title="Chat on WhatsApp 1"
               className="flex items-center gap-1.5 text-[#D4AF37] font-semibold hover:underline"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -51,6 +52,7 @@ export default function Navbar() {
               href="https://wa.me/201080132708" 
               target="_blank" 
               rel="noopener noreferrer" 
+              title="Chat on WhatsApp 2"
               className="flex items-center gap-1.5 text-[#D4AF37] font-semibold hover:underline"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -66,12 +68,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           
-          <Link href="/" className="flex items-center gap-4 group">
+          <Link href="/" title="AHMT Egypt Travel Home" className="flex items-center gap-4 group">
             <div className="relative w-16 h-16 overflow-hidden rounded-full border-2 border-[#D4AF37] shadow-2xl bg-[#0A192F]">
               <Image 
                 src="/logo.webp" 
                 alt="AHMT Egypt Travel Logo" 
+                title="AHMT Egypt Travel Logo"
                 fill 
+                sizes="64px"
                 className="object-cover p-0.5 group-hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -88,11 +92,11 @@ export default function Navbar() {
           {/* Navigation Links - Desktop */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="flex items-center space-x-6 text-base font-bold bg-white/90 px-6 py-2.5 rounded-full shadow-inner border border-[#D4AF37]/30 text-black">
-              <Link href="/" className="hover:text-[#D4AF37] transition-colors">Home</Link>
-              <Link href="/destinations" className="hover:text-[#D4AF37] transition-colors">Destinations</Link>
-              <Link href="/tours" className="hover:text-[#D4AF37] transition-colors">Tours</Link>
-              <Link href="/about" className="hover:text-[#D4AF37] transition-colors">About Us</Link>
-              <Link href="/contact" className="hover:text-[#D4AF37] transition-colors">Contact Us</Link>
+              <Link href="/" title="Go to Home page" className="hover:text-[#D4AF37] transition-colors">Home</Link>
+              <Link href="/destinations" title="Explore Destinations" className="hover:text-[#D4AF37] transition-colors">Destinations</Link>
+              <Link href="/tours" title="View Tours and Packages" className="hover:text-[#D4AF37] transition-colors">Tours</Link>
+              <Link href="/about" title="Learn About Us" className="hover:text-[#D4AF37] transition-colors">About Us</Link>
+              <Link href="/contact" title="Contact Us" className="hover:text-[#D4AF37] transition-colors">Contact Us</Link>
             </div>
           </nav>
 
@@ -101,6 +105,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-[#D4AF37] focus:outline-none bg-white/10 p-2 rounded-lg"
               aria-label="Toggle Menu"
+              title="Toggle Navigation Menu"
             >
               <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -121,6 +126,7 @@ export default function Navbar() {
             <Link 
               href="/" 
               onClick={() => setIsOpen(false)}
+              title="Go to Home page"
               className="text-white hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors"
             >
               Home
@@ -128,6 +134,7 @@ export default function Navbar() {
             <Link 
               href="/destinations" 
               onClick={() => setIsOpen(false)}
+              title="Explore Destinations"
               className="text-white hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors"
             >
               Destinations
@@ -135,6 +142,7 @@ export default function Navbar() {
             <Link 
               href="/tours" 
               onClick={() => setIsOpen(false)}
+              title="View Tours"
               className="text-white hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors"
             >
               Tours
@@ -142,6 +150,7 @@ export default function Navbar() {
             <Link 
               href="/about" 
               onClick={() => setIsOpen(false)}
+              title="Learn About Us"
               className="text-white hover:text-[#D4AF37] py-2 border-b border-white/5 transition-colors"
             >
               About Us
@@ -149,6 +158,7 @@ export default function Navbar() {
             <Link 
               href="/contact" 
               onClick={() => setIsOpen(false)}
+              title="Contact Us"
               className="mt-2 py-3 rounded-xl bg-gradient-to-r from-[#D4AF37] to-yellow-600 text-[#0A192F] font-extrabold uppercase tracking-wider text-sm shadow-lg"
             >
               Contact Us

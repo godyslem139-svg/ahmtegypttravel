@@ -15,11 +15,9 @@ const tourTypesImages = [
 export default function TourTypesGallery() {
   return (
     <section className="py-28 bg-[#0A192F] relative overflow-hidden border-t border-[#D4AF37]/20">
-      
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#D4AF37]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16">
-        
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-[#D4AF37] text-xs font-bold tracking-[0.25em] uppercase px-5 py-2 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/40 inline-block mb-4 shadow-lg">
             Our Specialties
@@ -32,12 +30,9 @@ export default function TourTypesGallery() {
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mt-6" />
         </div>
-
       </div>
 
       <div className="relative w-full overflow-hidden flex py-4">
-        
-        {/* Gradient Fade Edges for Smooth Look */}
         <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0A192F] to-transparent z-20 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0A192F] to-transparent z-20 pointer-events-none" />
 
@@ -51,8 +46,10 @@ export default function TourTypesGallery() {
                 <Image 
                   src={item.src} 
                   alt={item.title} 
+                  title={item.title}
                   width={600}
                   height={800}
+                  sizes="(max-width: 768px) 320px, 380px"
                   className="w-full h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-105 rounded-2xl"
                 />
               </div>
@@ -65,15 +62,10 @@ export default function TourTypesGallery() {
                   {item.title}
                 </h3>
               </div>
-
-              <div className="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-              <div className="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             </div>
           ))}
         </div>
-
       </div>
-
     </section>
   );
 }

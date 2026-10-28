@@ -1,3 +1,4 @@
+// src/components/WhyChooseUs.tsx
 import Image from 'next/image';
 
 const features = [
@@ -51,7 +52,9 @@ export default function WhyChooseUs() {
                   <Image 
                     src={item.image} 
                     alt={item.title} 
+                    title={item.title}
                     fill 
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-2"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/60 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity" />

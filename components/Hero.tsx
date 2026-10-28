@@ -40,12 +40,14 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
           <Link 
             href="/tours" 
+            title="Explore our exclusive Nile cruises and luxury tours"
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-yellow-600 text-[#0A192F] font-black text-base shadow-xl hover:shadow-[#D4AF37]/50 transition-all transform hover:-translate-y-1 text-center"
           >
             Explore Nile Cruises & Tours
           </Link>
           <Link 
             href="/contact" 
+            title="Contact our luxury travel planners"
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white border-2 border-[#D4AF37] font-bold text-base backdrop-blur-md transition-all transform hover:-translate-y-1 text-center"
           >
             Contact Us Now

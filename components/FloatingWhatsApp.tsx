@@ -16,6 +16,7 @@ export default function FloatingWhatsApp() {
             <span className="text-xs font-bold text-[#D4AF37] tracking-wider uppercase">Chat With Us</span>
             <button 
               onClick={() => setIsOpen(false)}
+              title="Close chat menu"
               className="text-gray-400 hover:text-white text-sm font-bold w-6 h-6 rounded-full bg-white/5 flex items-center justify-center transition-colors"
             >
               ✕
@@ -31,6 +32,7 @@ export default function FloatingWhatsApp() {
               href="https://wa.me/201226158975" 
               target="_blank" 
               rel="noopener noreferrer"
+              title="Chat with Support Line 1 on WhatsApp"
               className="flex items-center gap-3 p-2.5 rounded-xl bg-white/[0.03] border border-[#D4AF37]/30 hover:border-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all group"
             >
               <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 flex-shrink-0">
@@ -48,6 +50,7 @@ export default function FloatingWhatsApp() {
               href="https://wa.me/201080132708" 
               target="_blank" 
               rel="noopener noreferrer"
+              title="Chat with Support Line 2 on WhatsApp"
               className="flex items-center gap-3 p-2.5 rounded-xl bg-white/[0.03] border border-[#D4AF37]/30 hover:border-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all group"
             >
               <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 flex-shrink-0">
@@ -67,6 +70,7 @@ export default function FloatingWhatsApp() {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
+        title="Open WhatsApp Support Chat"
         className="w-14 h-14 rounded-full bg-gradient-to-tr from-green-600 to-green-400 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 relative group border-2 border-[#D4AF37]"
         aria-label="WhatsApp Contact"
       >

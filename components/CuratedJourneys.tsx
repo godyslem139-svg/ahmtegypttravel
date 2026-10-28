@@ -89,6 +89,7 @@ export default function CuratedJourneys() {
 
                 <Link 
                   href="/contact" 
+                  title={`Book your journey for ${item.title}`}
                   className="w-full py-4 rounded-2xl bg-gradient-to-r from-[#D4AF37] to-yellow-600 text-[#0A192F] font-black text-sm tracking-wider text-center block shadow-lg hover:opacity-95 transition-all transform hover:scale-[1.02]"
                 >
                   BOOK NOW

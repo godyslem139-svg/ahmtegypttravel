@@ -82,8 +82,10 @@ export default function DestinationsPage() {
                 <Image 
                   src={dest.image} 
                   alt={dest.title}
+                  title={dest.title}
                   width={800}
                   height={1000}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-transparent to-transparent opacity-40 pointer-events-none" />
@@ -107,6 +109,7 @@ export default function DestinationsPage() {
                 <div className="flex items-center gap-3 pt-4 border-t border-[#D4AF37]/20">
                   <Link 
                     href={`/destinations/${dest.slug}`}
+                    title={`Explore tours and details for ${dest.title}`}
                     className="flex-1 py-3.5 rounded-xl bg-gradient-to-r from-[#D4AF37] to-yellow-600 text-[#0A192F] font-black text-xs tracking-wider uppercase text-center shadow-lg hover:opacity-95 transition-all transform hover:scale-[1.02]"
                   >
                     Explore Destination
@@ -116,6 +119,7 @@ export default function DestinationsPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="WhatsApp"
+                    title={`Chat on WhatsApp regarding ${dest.title}`}
                     className="w-12 h-12 rounded-xl bg-white/[0.04] border border-[#D4AF37]/30 flex items-center justify-center text-green-400 hover:bg-green-500/20 hover:border-[#D4AF37] transition-all"
                   >
                     <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">

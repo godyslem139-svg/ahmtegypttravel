@@ -1,3 +1,4 @@
+// src/components/Footer.tsx
 'use client';
 
 import Link from 'next/link';
@@ -117,13 +118,18 @@ export default function Footer() {
               <span className="w-2 h-2 rounded-full bg-[#D4AF37]" /> Top Destinations
             </h4>
             <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
-              {["Cairo", "Alexandria", "Red Sea", "Luxor & Aswan"].map((destination, idx) => (
+              {[
+                { name: "Cairo", path: "/destinations/cairo" },
+                { name: "Alexandria", path: "/destinations/alexandria" },
+                { name: "Red Sea", path: "/destinations/red-sea" },
+                { name: "Luxor & Aswan", path: "/destinations/luxor-aswan" }
+              ].map((destination, idx) => (
                 <Link 
                   key={idx} 
-                  href="/destinations" 
+                  href={destination.path} 
                   className="py-3 px-5 rounded-xl bg-white/[0.03] border border-[#D4AF37]/20 text-gray-300 text-sm font-medium text-center hover:border-[#D4AF37] hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all duration-300 shadow-inner block"
                 >
-                  {destination}
+                  {destination.name}
                 </Link>
               ))}
             </div>

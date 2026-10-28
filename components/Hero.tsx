@@ -26,15 +26,15 @@ export default function Hero() {
           <svg className="w-4 h-4 text-[#D4AF37]" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
           </svg>
-          Sharm El Sheikh • Down Town • King Salman Street
+          Aswan & Nile Heritage • Nubian Magic • Upper Egypt
         </div>
 
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-wide leading-tight mb-6 drop-shadow-2xl">
-          Your Gateway to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-yellow-300 to-yellow-500">Egypt Exploration</span>
+          Sail the Timeless <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-yellow-300 to-yellow-500">Nile of Aswan</span>
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-200 max-w-2xl font-light leading-relaxed mb-10 drop-shadow-md">
-          Immerse yourself in the pharaonic magic, pristine Red Sea beaches, and unforgettable luxury journeys curated exclusively for you.
+          Immerse yourself in the tranquil beauty of Aswan, majestic pharaonic temples, golden deserts, and unforgettable luxury cruises on the legendary Nile.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
@@ -42,7 +42,7 @@ export default function Hero() {
             href="/tours" 
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-[#D4AF37] to-yellow-600 text-[#0A192F] font-black text-base shadow-xl hover:shadow-[#D4AF37]/50 transition-all transform hover:-translate-y-1 text-center"
           >
-            Explore Tours & Packages
+            Explore Nile Cruises & Tours
           </Link>
           <Link 
             href="/contact" 
